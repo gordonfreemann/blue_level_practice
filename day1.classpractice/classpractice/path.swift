@@ -11,15 +11,23 @@ import Foundation
 class FileMatcher
 {
     private var file: [String]
-    private var path: String
+    let filemanager = FileManager()
     
     init() {
         file = []
-        path = ""
     }
     
-    //func allFiles(atPath: String) -> [String]
-    //{
-    //    file.append(
-    //}
+    func allFiles(atPath: String) -> [String]
+    {
+        let contentsArray = try? filemanager.contentsOfDirectory(atPath: atPath)
+        return contentsArray!
+    }
+    
+    func isExist(filename: String, atPath: String) -> Bool
+    {
+        let contentsArray = try? filemanager.contentsOfDirectory(atPath: atPath)
+        let search = contentsArray?.contains(filename)
+        return search!
+    }
 }
+

@@ -46,7 +46,7 @@ class PenHolder
 {
     private var pens : [CXPen]
     private var usage : Int
-    private var capacity : Int
+    private let capacity : Int
     
     init(withCapacity : Int)
     {

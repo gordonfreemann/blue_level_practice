@@ -22,3 +22,7 @@ penholder1.add(pen: cxpen1)
 penholder1.printDescription()
 
 
+let file = FileMatcher()
+print(file.allFiles(atPath: "/"))
+print(file.isExist(filename: ".askldfj", atPath: "/"))
+
