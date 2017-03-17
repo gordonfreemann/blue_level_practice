@@ -27,9 +27,10 @@ class Product : Brand
 {
     private var productname : String
 
-    init(Product: String)
+    init(Brand: String, Product: String)
     {
         productname = Product
+        super.init(Brand: Brand)
     }
     
     func setProduct(setProduct: String)
@@ -38,7 +39,7 @@ class Product : Brand
     }
 }
 
-class Drink : Product
+class Spec : Product
 {
     private var volume : Int
     private var price : Int
@@ -46,12 +47,12 @@ class Drink : Product
     
     init(Volume: Int, Price: Int, Exp: Date)
     {
-        volume = volume
+        volume = Volume
         price = Price
         expirationdate = Exp
     }
     
-    func setDrink(setVolume: Int, setPrice: Int, setExp: Date)
+    func setSpec(setVolume: Int, setPrice: Int, setExp: Date)
     {
         volume = setVolume
         price = setPrice

@@ -10,6 +10,6 @@ import Foundation
 
 
 
-let a = Drink(Volume: 355, Price: 1000, Exp: Date())
+let a = Spec(Volume: 355, Price: 1000, Exp: Date())
 a.setProduct(setProduct: "fanta")
 a.setBrand(setBrand: "cocacola")
