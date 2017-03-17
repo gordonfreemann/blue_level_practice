@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7FF0A4941E7928DC00A82E9F /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF0A4931E7928DC00A82E9F /* main.swift */; };
+		7F0037701E7B7F370060C04B /* func.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F00376F1E7B7F370060C04B /* func.swift */; };
+		7FF0A4BE1E7A7B8C00A82E9F /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF0A4BD1E7A7B8C00A82E9F /* main.swift */; };
+		7FF0A4C51E7A7BDC00A82E9F /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF0A4C41E7A7BDC00A82E9F /* File.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		7FF0A48E1E7928DC00A82E9F /* CopyFiles */ = {
+		7FF0A4B81E7A7B8C00A82E9F /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -23,12 +25,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		7FF0A4901E7928DC00A82E9F /* classpractice */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = classpractice; sourceTree = BUILT_PRODUCTS_DIR; };
-		7FF0A4931E7928DC00A82E9F /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		7F00376F1E7B7F370060C04B /* func.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = func.swift; sourceTree = "<group>"; };
+		7FF0A4BA1E7A7B8C00A82E9F /* autovendingmachine */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = autovendingmachine; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FF0A4BD1E7A7B8C00A82E9F /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		7FF0A4C41E7A7BDC00A82E9F /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		7FF0A48D1E7928DC00A82E9F /* Frameworks */ = {
+		7FF0A4B71E7A7B8C00A82E9F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,96 +42,100 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7FF0A4871E7928DC00A82E9F = {
+		7FF0A4B11E7A7B8C00A82E9F = {
 			isa = PBXGroup;
 			children = (
-				7FF0A4921E7928DC00A82E9F /* classpractice */,
-				7FF0A4911E7928DC00A82E9F /* Products */,
+				7FF0A4BC1E7A7B8C00A82E9F /* autovendingmachine */,
+				7FF0A4BB1E7A7B8C00A82E9F /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		7FF0A4911E7928DC00A82E9F /* Products */ = {
+		7FF0A4BB1E7A7B8C00A82E9F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7FF0A4901E7928DC00A82E9F /* classpractice */,
+				7FF0A4BA1E7A7B8C00A82E9F /* autovendingmachine */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7FF0A4921E7928DC00A82E9F /* classpractice */ = {
+		7FF0A4BC1E7A7B8C00A82E9F /* autovendingmachine */ = {
 			isa = PBXGroup;
 			children = (
-				7FF0A4931E7928DC00A82E9F /* main.swift */,
+				7FF0A4BD1E7A7B8C00A82E9F /* main.swift */,
+				7FF0A4C41E7A7BDC00A82E9F /* File.swift */,
+				7F00376F1E7B7F370060C04B /* func.swift */,
 			);
-			path = classpractice;
+			path = autovendingmachine;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7FF0A48F1E7928DC00A82E9F /* classpractice */ = {
+		7FF0A4B91E7A7B8C00A82E9F /* autovendingmachine */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7FF0A4971E7928DC00A82E9F /* Build configuration list for PBXNativeTarget "classpractice" */;
+			buildConfigurationList = 7FF0A4C11E7A7B8C00A82E9F /* Build configuration list for PBXNativeTarget "autovendingmachine" */;
 			buildPhases = (
-				7FF0A48C1E7928DC00A82E9F /* Sources */,
-				7FF0A48D1E7928DC00A82E9F /* Frameworks */,
-				7FF0A48E1E7928DC00A82E9F /* CopyFiles */,
+				7FF0A4B61E7A7B8C00A82E9F /* Sources */,
+				7FF0A4B71E7A7B8C00A82E9F /* Frameworks */,
+				7FF0A4B81E7A7B8C00A82E9F /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = classpractice;
-			productName = classpractice;
-			productReference = 7FF0A4901E7928DC00A82E9F /* classpractice */;
+			name = autovendingmachine;
+			productName = autovendingmachine;
+			productReference = 7FF0A4BA1E7A7B8C00A82E9F /* autovendingmachine */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		7FF0A4881E7928DC00A82E9F /* Project object */ = {
+		7FF0A4B21E7A7B8C00A82E9F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "jungwan jin";
 				TargetAttributes = {
-					7FF0A48F1E7928DC00A82E9F = {
+					7FF0A4B91E7A7B8C00A82E9F = {
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 7FF0A48B1E7928DC00A82E9F /* Build configuration list for PBXProject "classpractice" */;
+			buildConfigurationList = 7FF0A4B51E7A7B8C00A82E9F /* Build configuration list for PBXProject "autovendingmachine" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 7FF0A4871E7928DC00A82E9F;
-			productRefGroup = 7FF0A4911E7928DC00A82E9F /* Products */;
+			mainGroup = 7FF0A4B11E7A7B8C00A82E9F;
+			productRefGroup = 7FF0A4BB1E7A7B8C00A82E9F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7FF0A48F1E7928DC00A82E9F /* classpractice */,
+				7FF0A4B91E7A7B8C00A82E9F /* autovendingmachine */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		7FF0A48C1E7928DC00A82E9F /* Sources */ = {
+		7FF0A4B61E7A7B8C00A82E9F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7FF0A4941E7928DC00A82E9F /* main.swift in Sources */,
+				7FF0A4BE1E7A7B8C00A82E9F /* main.swift in Sources */,
+				7FF0A4C51E7A7BDC00A82E9F /* File.swift in Sources */,
+				7F0037701E7B7F370060C04B /* func.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		7FF0A4951E7928DC00A82E9F /* Debug */ = {
+		7FF0A4BF1E7A7B8C00A82E9F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -175,7 +183,7 @@
 			};
 			name = Debug;
 		};
-		7FF0A4961E7928DC00A82E9F /* Release */ = {
+		7FF0A4C01E7A7B8C00A82E9F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -215,7 +223,7 @@
 			};
 			name = Release;
 		};
-		7FF0A4981E7928DC00A82E9F /* Debug */ = {
+		7FF0A4C21E7A7B8C00A82E9F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -223,7 +231,7 @@
 			};
 			name = Debug;
 		};
-		7FF0A4991E7928DC00A82E9F /* Release */ = {
+		7FF0A4C31E7A7B8C00A82E9F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -234,24 +242,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7FF0A48B1E7928DC00A82E9F /* Build configuration list for PBXProject "classpractice" */ = {
+		7FF0A4B51E7A7B8C00A82E9F /* Build configuration list for PBXProject "autovendingmachine" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7FF0A4951E7928DC00A82E9F /* Debug */,
-				7FF0A4961E7928DC00A82E9F /* Release */,
+				7FF0A4BF1E7A7B8C00A82E9F /* Debug */,
+				7FF0A4C01E7A7B8C00A82E9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7FF0A4971E7928DC00A82E9F /* Build configuration list for PBXNativeTarget "classpractice" */ = {
+		7FF0A4C11E7A7B8C00A82E9F /* Build configuration list for PBXNativeTarget "autovendingmachine" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7FF0A4981E7928DC00A82E9F /* Debug */,
-				7FF0A4991E7928DC00A82E9F /* Release */,
+				7FF0A4C21E7A7B8C00A82E9F /* Debug */,
+				7FF0A4C31E7A7B8C00A82E9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 7FF0A4881E7928DC00A82E9F /* Project object */;
+	rootObject = 7FF0A4B21E7A7B8C00A82E9F /* Project object */;
 }
