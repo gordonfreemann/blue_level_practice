@@ -2,12 +2,10 @@
 
 P1 - 완료(Make Ladder)
 
-P2 - 완료(Abstract Pen)
+P1 - 완료(CXPen, Filemanager(플러스미션 미완료))
 
-P2 - 플러스미션 미완료(FileMatcher)
+P1-2 - 미완료(Pen 세부클래스)
 
-P3 - 미완료(Abstract Pen 세부클래스 만들기 미완료)
+P2 - 미완료(Date-Time, Vending Machine)
 
-P4 - 미완료(Date-Time)
-
-P4 - 미완료(Vending Machine)
+P3 - 완료 (TouchMoved)
