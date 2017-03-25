@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="P7_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uHO-y9-mB3" userLabel="TopView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="178"/>
+                                <color key="backgroundColor" red="1" green="0.60219051351184771" blue="0.76091336391269715" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="178" id="g58-4H-VBh"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bNO-mI-RJw" userLabel="SplitView">
+                                <rect key="frame" x="0.0" y="178" width="375" height="24"/>
+                                <color key="backgroundColor" red="1" green="0.72032960998959494" blue="0.63027036025659933" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="YFw-eA-Wuy"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aNU-N2-wNs" userLabel="BottomView">
+                                <rect key="frame" x="0.0" y="202" width="375" height="465"/>
+                                <color key="backgroundColor" red="0.86616316175953634" green="0.52350948846036571" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bNO-mI-RJw" firstAttribute="top" secondItem="uHO-y9-mB3" secondAttribute="bottom" id="6EX-tV-0e1"/>
+                            <constraint firstItem="uHO-y9-mB3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="HfT-CU-taZ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="aNU-N2-wNs" secondAttribute="bottom" id="JeH-xZ-UW6"/>
+                            <constraint firstAttribute="trailing" secondItem="bNO-mI-RJw" secondAttribute="trailing" id="JkP-89-sbE"/>
+                            <constraint firstAttribute="trailing" secondItem="aNU-N2-wNs" secondAttribute="trailing" id="TOX-fK-2kd"/>
+                            <constraint firstAttribute="trailing" secondItem="uHO-y9-mB3" secondAttribute="trailing" id="aMx-DP-8Q3"/>
+                            <constraint firstItem="bNO-mI-RJw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="fVY-de-deH"/>
+                            <constraint firstItem="aNU-N2-wNs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="kmE-MH-ogf"/>
+                            <constraint firstItem="uHO-y9-mB3" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="nhS-GH-EpH"/>
+                            <constraint firstItem="aNU-N2-wNs" firstAttribute="top" secondItem="bNO-mI-RJw" secondAttribute="bottom" id="uQG-dx-xsv"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="splitview" destination="bNO-mI-RJw" id="2jb-q0-dx1"/>
+                        <outlet property="topViewY" destination="g58-4H-VBh" id="0sa-zJ-ikZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-762" y="134"/>
+        </scene>
+    </scenes>
+</document>

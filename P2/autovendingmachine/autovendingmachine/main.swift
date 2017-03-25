@@ -10,6 +10,14 @@ import Foundation
 
 
 
-let a = Spec(Volume: 355, Price: 1000, Exp: Date())
-a.setProduct(setProduct: "fanta")
-a.setBrand(setBrand: "cocacola")
+var cocacola = Product(setVolume: 355, setPrice: 900, setSellByDate: Date(), setBrand: "cocacola", setProduct: "cocacola")
+var sprite = Product(setVolume: 355, setPrice: 900, setSellByDate: Date(), setBrand: "cocacola", setProduct: "sprite")
+var fanta = Product(setVolume: 355, setPrice: 900, setSellByDate: Date(), setBrand: "cocacola", setProduct: "fanta")
+
+
+var vending = AutoVendingMachine()
+vending.addDrink(product: cocacola, count: 10)
+vending.addDrink(product: sprite, count: 10)
+vending.addDrink(product: fanta, count: 10)
+
+vending.checkStock()
