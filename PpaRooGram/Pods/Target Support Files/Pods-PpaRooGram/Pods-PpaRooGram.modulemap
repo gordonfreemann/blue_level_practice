@@ -1,0 +1,6 @@
+framework module Pods_PpaRooGram {
+  umbrella header "Pods-PpaRooGram-umbrella.h"
+
+  export *
+  module * { export * }
+}
